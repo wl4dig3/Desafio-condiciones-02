@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(155, 223, 223);
+}
+.container-img {
+    display: flex;
+    justify-content: space-around;
+}
+.container-img img {
+    width: 300px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+.img-input {
+    display: flex;
+    flex-direction: column;
+}
