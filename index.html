@@ -11,6 +11,7 @@
 
 <body>
     <h1>Desafio de JavaSript - Condiciones</h1>
+    <p>Puedes llevar hasta <span id="cantidad">10</span> stickers</p>
     <section class="container-img">
         <div class="img-input">
             <img src="./assets/img/IT.jpg" alt="ti-1">
@@ -25,8 +26,35 @@
             <input id="input-03" type="text">
         </div>
     </section>
+    <p id="cant-llevada"></p>
+    <button id="btn" onclick="
+    cantidad = 10;
+    value1 = Number(document.querySelector('#input-01').value);
+    value2 = Number(document.querySelector('#input-02').value);
+    value3 = Number(document.querySelector('#input-03').value);
+    suma = value1 + value2 + value3;
+     if (suma <= cantidad) {
+        cantLlevada = document.querySelector('#cant-llevada');
+        cantLlevada.innerHTML = `Llevas ${suma} stickers`
+         console.log('es menos de 10', suma);
+     } else if (suma >= cantidad) {
+        cantLlevada = document.querySelector('#cant-llevada');
+        cantLlevada.innerHTML = `Estás llevando más de  ${cantidad} stickers y son demasiados`
+     }
+    ">
+        Verificar
+    </button>
 
     <script>
+        let inpu01 = document.querySelector('#input-01').value;
+        console.log(inpu01);
+
+        // const ver = () => {
+        //     let btnVerificar = document.querySelector('#btn')
+        //     btnVerificar.addEventListener('click', () => {
+        //         console.log('click en input');
+        //     })
+        // }
 
     </script>
 

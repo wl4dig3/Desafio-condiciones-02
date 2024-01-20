@@ -1,5 +1,12 @@
 body {
     background-color: rgb(155, 223, 223);
+    text-align: center;
+}
+body button {
+    margin-top: 10px;
+}
+body p {
+    text-align: center;
 }
 .container-img {
     display: flex;
@@ -14,3 +21,4 @@ body {
     display: flex;
     flex-direction: column;
 }
+
